@@ -10,6 +10,7 @@
 		89E47C701F4B16E80053A22A /* LMiOSTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E47C661F4B16E80053A22A /* LMiOSTemplate.framework */; };
 		89E47C751F4B16E80053A22A /* LMiOSTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E47C741F4B16E80053A22A /* LMiOSTemplateTests.swift */; };
 		89E47C771F4B16E80053A22A /* LMiOSTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E47C691F4B16E80053A22A /* LMiOSTemplate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89E47C811F4B18670053A22A /* LMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E47C801F4B18670053A22A /* LMTextField.swift */; };
 		8BCD93D458AA834A5BE04CE4 /* Pods_LMiOSTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9BB565EEB3049BC0ED9FF7 /* Pods_LMiOSTemplateTests.framework */; };
 		CA1FA7CDACB472A5E50787EA /* Pods_LMiOSTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A220A682E7FDEEE145E5F3F /* Pods_LMiOSTemplate.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,7 @@
 		89E47C6F1F4B16E80053A22A /* LMiOSTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LMiOSTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E47C741F4B16E80053A22A /* LMiOSTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMiOSTemplateTests.swift; sourceTree = "<group>"; };
 		89E47C761F4B16E80053A22A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E47C801F4B18670053A22A /* LMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LMTextField.swift; sourceTree = "<group>"; };
 		B3426B06ED7305388C055521 /* Pods-LMiOSTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LMiOSTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LMiOSTemplateTests/Pods-LMiOSTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB9BB565EEB3049BC0ED9FF7 /* Pods_LMiOSTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LMiOSTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				89E47C691F4B16E80053A22A /* LMiOSTemplate.h */,
+				89E47C801F4B18670053A22A /* LMTextField.swift */,
 				89E47C6A1F4B16E80053A22A /* Info.plist */,
 			);
 			path = LMiOSTemplate;
@@ -186,6 +189,7 @@
 					89E47C651F4B16E80053A22A = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = QAZG2BYMD2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					89E47C6E1F4B16E80053A22A = {
@@ -313,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E47C811F4B18670053A22A /* LMTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20931BC135E468BC3FDE6CBC /* Pods-LMiOSTemplate.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QAZG2BYMD2;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lightmatter.LMiOSTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -460,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 833E5357442CE29BBB8DF8A1 /* Pods-LMiOSTemplate.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QAZG2BYMD2;
@@ -480,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3426B06ED7305388C055521 /* Pods-LMiOSTemplateTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QAZG2BYMD2;
 				INFOPLIST_FILE = LMiOSTemplateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -493,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 786FC428F01F7925CBDDCFA4 /* Pods-LMiOSTemplateTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QAZG2BYMD2;
 				INFOPLIST_FILE = LMiOSTemplateTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -521,6 +531,7 @@
 				89E47C7C1F4B16E80053A22A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89E47C7D1F4B16E80053A22A /* Build configuration list for PBXNativeTarget "LMiOSTemplateTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +540,7 @@
 				89E47C7F1F4B16E80053A22A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
